@@ -1,6 +1,6 @@
 #!/bin/bash
-SM_SERVER=suma42test.site.com
-REGISTRATION_KEY=1-15sp4
+SM_SERVER=megasuma43.houseofswartz.net
+REGISTRATION_KEY=1-sle15sp4-dev
 SALT_MINION_CONF_DIR="/etc/venv-salt-minion/minion.d"
 SALT_MINION_SERVICE="venv-salt-minion"
 SALT_MINION_DIR="/etc/venv-salt-minion"
@@ -22,7 +22,7 @@ dbus-uuidgen --ensure
 systemd-machine-id-setup
 
 
-hostset=`cat /etc/machine-id | tail -c 6` && hostnamectl set-hostname vmbuild1-$hostset 
+hostset=`cat /etc/machine-id | tail -c 6` && hostnamectl set-hostname phsvm-$hostset 
 echo "master: $SM_SERVER" > $SALT_MINION_CONF_DIR/susemanager.conf
 echo "server_id_use_src: adler42" >> $SALT_MINION_CONF_DIR/susemanager.conf
 echo "enable_legacy_startup_events: False" >> $SALT_MINION_CONF_DIR/susemanager.conf
