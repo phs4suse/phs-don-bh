@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<image schemaversion="6.1" name="sle15-sp4-dpv">
+<image schemaversion="6.1" name="sle15-sp4-phs">
     <description type="system">
         <author>Don Vosburg</author>
         <contact>dvosburg@suse.com</contact>
@@ -14,7 +14,7 @@
 
         <locale>en_US</locale>
         <keytable>us.map.gz</keytable>
-        <timezone>America/Detroit</timezone>
+        <timezone>America/Chicago</timezone>
         <hwclock>utc</hwclock>
 
         <rpm-excludedocs>true</rpm-excludedocs>
